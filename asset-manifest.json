@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nyz/static/css/main.152759fb.css",
-    "main.js": "/nyz/static/js/main.de2dc060.js",
+    "main.js": "/nyz/static/js/main.c6949d89.js",
     "static/media/bg.jpg": "/nyz/static/media/bg.e2f2ecd4c3653bf7b40d.jpg",
     "static/media/contacts.jpeg": "/nyz/static/media/contacts.4da1192b7126680f8261.jpeg",
     "index.html": "/nyz/index.html",
     "main.152759fb.css.map": "/nyz/static/css/main.152759fb.css.map",
-    "main.de2dc060.js.map": "/nyz/static/js/main.de2dc060.js.map"
+    "main.c6949d89.js.map": "/nyz/static/js/main.c6949d89.js.map"
   },
   "entrypoints": [
     "static/css/main.152759fb.css",
-    "static/js/main.de2dc060.js"
+    "static/js/main.c6949d89.js"
   ]
 }
