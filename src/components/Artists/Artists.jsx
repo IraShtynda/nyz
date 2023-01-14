@@ -1,4 +1,4 @@
-import '../style/Artists.scss'
+import './Artists.scss'
 import ArtistCard from './ArtistCard';
 import { dataImg } from './dataImg';
 import { useState} from 'react';
@@ -16,9 +16,9 @@ const Artists = () => {
     }
 
     return (
-        <main>
+        <main className='artists'>
             <div className='container'>
-                <div className='artists'>
+            <div className='artists__wrapper'>
                     <h2>OUR ARTISTS</h2>
                     <div className='artists__cards'>
                         {initialArtists.map(artist => <ArtistCard src={artist.src} title={artist.title} key={artist.id} />)

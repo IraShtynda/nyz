@@ -1,4 +1,4 @@
-@import './variables';
+@import '../../style/variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:ital@0;1&display=swap');
 
 * {
@@ -39,9 +39,14 @@ input::-webkit-inner-spin-button {
 }
 
 body {
-  background-image: url(../../public/bg.jpg);
+  background-image: url(./bg.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+main {
+  display: flex;
+    align-items: center;
+    min-height: calc(100vh - 140px);
 }
 
 .container {
@@ -59,18 +64,24 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 h3 {
   color: $brand_color;
-    font-family: $accent_font;
-    font-size: 18px;
-    line-height: 18px;
+  font-family: $accent_font;
+  font-size: 18px;
+  line-height: 18px;
 }
+
 h6 {
   font-size: 14px;
   font-style: italic;
 }
+
 @media (max-width: 768px) {
-  .container {
-      padding: 0 20px;
+  main {
+      min-height: calc(100vh - 180px);
     }
+  .container {
+    padding: 0 20px;
+  }
 }

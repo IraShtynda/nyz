@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
-import '../style/Header.scss';
+import './Header.scss';
 import { useState } from 'react';
+import logo from './logo.png';
 
 const Header = () => {
     const [burger_class, setBurgerClass] = useState("burger-menu-item unclicked");
@@ -22,7 +23,7 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="header__logo">
-                    <NavLink to='/'><img className="header__logo-img" src='logo.png' alt='logo' /></NavLink>
+                    <img className="header__logo-img" src={logo} alt='logo' />
                     <span>NYZ Productions </span>
                 </div>
                 <nav className="header__menu">

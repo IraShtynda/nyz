@@ -1,4 +1,4 @@
-import '../style/Contacts.scss';
+import './Contacts.scss';
 import { useFormik } from 'formik';
 
 const Contacts = () => {
@@ -13,9 +13,8 @@ const Contacts = () => {
         },
     });
     return (
-        <main>
+        <main className='contacts'>
             <div className='container'>
-                <div className='contacts'>
                     <div className='contacts__wrapper'>
                         <div className='contacts__content'>
                             <h4>NYZ PRODUCTIONS ARE ALWAYS SEARCHING FOR NEW TALENT.</h4>
@@ -63,8 +62,7 @@ const Contacts = () => {
 
                             <button className="submit" type="submit">Submit</button>
                         </form>
-                    </div> 
-                </div>
+                    </div>
             </div>
         </main>
     );

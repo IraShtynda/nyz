@@ -1,12 +1,14 @@
-@import './variables';
+@import '../../style/variables.scss';
 
 .footer {
+    height: 40px;
     background-color: rgba(0, 0, 0, 0.85);
+
     .container {
-        height: 40px;
+        padding-top: 10px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+
         span {
             font-size: 13px;
         }
@@ -19,6 +21,7 @@
         a {
             width: 20px;
             height: 20px;
+
             &:hover {
                 color: $brand_color;
             }
@@ -28,11 +31,12 @@
 
 @media (max-width: 768px) {
     .footer {
-            .container {
-                justify-content: center;
-                gap: 20px;
-                flex-direction: column-reverse;
-                height: 80px;
-            }
+        display: flex;
+        height: 80px;
+        .container {
+            justify-content: center;
+            gap: 20px;
+            flex-direction: column-reverse;
         }
+    }
 }

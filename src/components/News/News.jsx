@@ -1,11 +1,11 @@
-import '../style/News.scss'
+import './News.scss'
 import NewsCard from './NewsCard';
 
 const News = () => {
     return (
-        <main>
+        <main className='news'>
             <div className='container'>
-                <div className='news'>
+            <div className='news__wrapper'>
                     <h2>News</h2>
                     <div className='news__cards'>
                         <NewsCard src='https://static.wixstatic.com/media/84770f_de90b7b26eec4e2dad13c95133397f96.jpg/v1/fill/w_350,h_313,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/84770f_de90b7b26eec4e2dad13c95133397f96.jpg'

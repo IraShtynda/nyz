@@ -1,0 +1,43 @@
+@import '../../style/variables.scss';
+
+.news {
+
+    &__wrapper {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 40px 40px 0 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: 4px solid $text_color;
+        padding-bottom: 12px;
+
+        img {
+            max-height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .news {
+        &__wrapper {
+            padding: 20px 20px 0 20px;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}
